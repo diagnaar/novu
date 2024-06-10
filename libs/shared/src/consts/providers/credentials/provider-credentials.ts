@@ -104,6 +104,22 @@ export const nexmoConfig: IConfigCredentials[] = [
   ...smsConfigBase,
 ];
 
+export const orangeConfig: IConfigCredentials[] = [
+  {
+    key: CredentialsKeyEnum.ApiKey,
+    displayName: 'API Key',
+    type: 'string',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.SenderName,
+    displayName: 'Sender name',
+    type: 'string',
+    required: true,
+  },
+  ...smsConfigBase,
+];
+
 export const mandrillConfig: IConfigCredentials[] = [
   {
     key: CredentialsKeyEnum.ApiKey,

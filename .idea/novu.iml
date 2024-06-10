@@ -49,4 +49,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="announcement" level="application" />
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="b797bd2b-308f-4483-bc7b-151a77cbf2eb" />
+  </component>
 </module>

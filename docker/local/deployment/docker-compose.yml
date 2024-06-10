@@ -23,7 +23,8 @@ services:
     ports:
       - 27017:27017
   api:
-    image: 'ghcr.io/novuhq/novu/api:0.17.1'
+    # image: 'ghcr.io/novuhq/novu/api:0.17.1'
+    image: 'novu-api'
     depends_on:
       - mongodb
       - redis
@@ -62,7 +63,8 @@ services:
     ports:
       - '3000:3000'
   worker:
-    image: 'ghcr.io/novuhq/novu/worker:0.17.1'
+    # image: 'ghcr.io/novuhq/novu/worker:0.17.1'
+    image: 'novu-worker'
     depends_on:
       - mongodb
       - redis
@@ -117,7 +119,8 @@ services:
     ports:
       - '3002:3002'
   web:
-    image: 'ghcr.io/novuhq/novu/web:0.17.1'
+    # image: 'ghcr.io/novuhq/novu/web:0.17.1'
+    image: 'novu-web'
     depends_on:
       - api
       - worker
